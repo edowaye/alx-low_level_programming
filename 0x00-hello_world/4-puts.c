@@ -3,7 +3,7 @@
 /**
  * main - entry point
  * description: 'program is to print to stdout using puts'
- * return: always 0 (success)
+ * Return: Always 0 (success)
  */
 
 int main(void)
