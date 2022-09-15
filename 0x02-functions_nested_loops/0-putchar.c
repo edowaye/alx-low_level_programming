@@ -2,18 +2,23 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Description: Program is to print
+ * putchar followed by a new line
+ *
+ * Result: Always 0
  */
+
 int main(void)
 {
-	char *ch = "putchar";
-
-	while (*ch)
-	{
-		_putchar(*ch);
-		ch++;
-	}
-	_putchar('\n');
-
-	return (0);
+	int _putchar char c;
+	_putchar = ('_');
+	_putchar = ('p');
+	_putchar = ('u');
+	_putchar = ('t');
+	_putchar = ('c');
+	_putchar = ('h');
+	_putchar = ('a');
+	_putchar = ('r');
+	_putchar = ('\n');
 }
+return = (0);
