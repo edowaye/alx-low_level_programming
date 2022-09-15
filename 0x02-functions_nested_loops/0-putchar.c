@@ -1,24 +1,22 @@
-#include "main.h"
+#include "main.c"
 /**
  * main - Entry point
  *
- * Description: Program is to print
- * putchar followed by a new line
+ * Description: Program is to print putchar
+ * on a new line
  *
- * Result: Always 0
+ * Return: 0
  */
 
 int main(void)
 {
-	int _putchar char c;
-	_putchar = ('_');
-	_putchar = ('p');
-	_putchar = ('u');
-	_putchar = ('t');
-	_putchar = ('c');
-	_putchar = ('h');
-	_putchar = ('a');
-	_putchar = ('r');
-	_putchar = ('\n');
+	char[9] output = "_putchar";
+	int i;
+
+	for (i = 0; i <= 8; i++)
+	{
+		_putchar(output[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
-return = (0);
