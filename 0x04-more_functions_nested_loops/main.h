@@ -3,10 +3,9 @@
 
 /**
 *main - header file for protoypes
-*void protoypes (void)
-*int protoypes (int)
 */
 
+int _putchar(char);
 int _isupper(int c);
 int _isdigit(int);
 int mul(int, int);
