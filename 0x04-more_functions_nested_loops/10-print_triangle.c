@@ -1,13 +1,13 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-*print_square - prints squares
-*@size: parameter
+*print_triangle - prints triangles
+*@size: parameter in regards to size
 *Return: returns nothing
 */
 
-void print_square(int size)
+
+void print_triangle(int size)
 {
 	int x, y;
 
