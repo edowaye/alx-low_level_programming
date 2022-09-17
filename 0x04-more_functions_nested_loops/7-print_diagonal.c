@@ -7,7 +7,7 @@
   *
   *@n: Number of printing timnes
   *
-  *Return: Diagonal
+  *Return: Nothing
   */
 
 void print_diagonal(int n)
