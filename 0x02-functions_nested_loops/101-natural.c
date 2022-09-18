@@ -6,6 +6,7 @@
   *Description: Function that links natural
   *numbers and sums up
   *
+  *Return: 0
   */
 
 int main(void)
