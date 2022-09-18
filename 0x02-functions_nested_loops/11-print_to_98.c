@@ -8,14 +8,14 @@
   *numbers from n to 98
   *
   *@n: Input
-  *Return: Void
+  *Return: Nothing
   */
 
 void print_to_98(int n)
 {
 	if (n <= 98)
 	{
-		for (n <= 98; n++)
+		for (; n <= 98; n++)
 		{
 			printf("%d", n);
 
@@ -32,7 +32,7 @@ void print_to_98(int n)
 	else
 	{
 
-		for (n >= 98; n--)
+		for (; n >= 98; n--)
 		{
 			printf("%d", n);
 
@@ -42,6 +42,7 @@ void print_to_98(int n)
 			printf(",");
 			printf(" ");
 		}
+
 		printf('\n');
 
 	}
