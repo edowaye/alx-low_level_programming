@@ -18,7 +18,7 @@ int main(void)
 	fn[0] = 1;
 	fn[1] = 2;
 
-	printf("%ld, %ld ", fn[0], fn[1]);
+	printf("%ld, %ld, ", fn[0], fn[1]);
 
 	for (n = 2; n < 50; n++)
 	{
@@ -27,7 +27,7 @@ int main(void)
 		if (n == 49)
 			printf("%ld\n", fn[n]);
 		else
-			printf("%ld", fn[n]);
+			printf("%ld, ", fn[n]);
 	}
 	return (0);
 }
