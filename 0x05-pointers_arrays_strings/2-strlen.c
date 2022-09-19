@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  *_strlen - Prototype function
  *@s: String whose length should be returned
@@ -9,9 +9,13 @@
 
 int _strlen(char *s)
 {
-	int count;
+	int count = 0;
 
-	for (count = 0; str[count] != '\0'; ++count);
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
 
-	return count;
+	return (count);
 }
