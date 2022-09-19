@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
   *rev_string: Function prototype
@@ -13,4 +14,25 @@
 
 void rev_string(char *s)
 {
-	int length 
+	int i = str.length() - 1;
+	int start, end = i + 1; 
+	string result = "";
+
+	while (i >= 0) 
+	{
+		if (str[i] == ' ') 
+		{
+			start = i + 1;
+			while (start != end)
+				result += str[start++];
+			result += ' ';
+			end = i;
+		}
+
+		i--;
+	}
+	start = 0;
+	while (start != end)
+		result += str[start++];
+	return (result);
+}
