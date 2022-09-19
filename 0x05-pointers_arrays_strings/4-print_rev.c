@@ -7,25 +7,18 @@
   *
   *@s: The string to print
   *
-  *Description: To print a string in reverse
+  *Description - To print a string in reverse
   *followed by a new line
   *
-  *Return: void
+  *Return: rev
   */
 
 void print_rev(char *s)
 {
-	int i = 0;
+	int array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+	int loop;
 
-	while (*(s + 1))
-		i++;
-
-	i = i - 1;
-
-	while (1 >= 0)
-	{
-		_putchar(*(s + 1));
-		i--;
-	}
-	_putchar('\n');
+	for (loop = 9; loop >= 0; loop--)
+		printf("%d ", array[loop]);
+	return (0);
 }

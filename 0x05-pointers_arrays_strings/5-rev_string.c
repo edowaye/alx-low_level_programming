@@ -34,5 +34,5 @@ void rev_string(char *s)
 	start = 0;
 	while (start != end)
 		result += str[start++];
-	return (result);
+	return (0);
 }

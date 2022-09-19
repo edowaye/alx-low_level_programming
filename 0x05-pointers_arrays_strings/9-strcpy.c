@@ -2,9 +2,12 @@
 #include <string.h>
 
 /**
-  **_strcpy - Prototype function
-  *@n: Character to be copied from src to dest
-  */
+ * *_strcpy - Prototype function
+ *@src: source
+ *dest: destination
+ *@n: The first n character copied from src to dest
+ *Return: dest
+ */
 
 char *_strcpy(char *dest, char *src)
 {
