@@ -2,8 +2,11 @@
 #include <string.h>
 #include <stdio.h>
 /**
- *void_puts - Prototype function
+ *_puts - Prototype function
  *@str: String to be printed
+ *
+ *Description: A function that rintd a string
+ *followed by a new line to std out
  *
  *Return: Count of char as an integer
  */
