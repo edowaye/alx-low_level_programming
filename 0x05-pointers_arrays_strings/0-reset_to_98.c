@@ -4,7 +4,7 @@
   *
   *Description - Function that takes a pointer to an int as
   *parameter and updates the integer to 98
-  *@*n - Input
+  *@n: Input
   *Return: Nothing
   */
 
