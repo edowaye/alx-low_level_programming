@@ -30,6 +30,5 @@ void rev_string(char *s)
 			j--;
 			s[i - j - i] = temp[j];
 		}
-		_putchar("%s\n", s);
 	}
 }
