@@ -66,5 +66,5 @@ int main(void)
 
 	randomPasswordGeneration(N);
 
-	return 0;
+	return (0);
 }
