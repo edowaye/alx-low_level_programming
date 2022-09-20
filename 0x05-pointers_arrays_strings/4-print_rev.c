@@ -1,7 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
-
+int lenstr(char *i);
 /**
   *print_rev - Funtion prototype
   *
@@ -10,15 +8,41 @@
   *Description - To print a string in reverse
   *followed by a new line
   *
-  *Return: rev
+  *Return: void
   */
 
 void print_rev(char *s)
 {
-	int array[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
-	int loop;
+	int j;
 
-	for (loop = 9; loop >= 0; loop--)
-		printf("%d ", array[loop]);
-	return (0);
+	j = lenstr(s) - 1;
+	/**-1 is the null byte*/
+
+	while (j >= 0)
+	{
+		_putchar(s[j]);
+		j--;
+	}
+	_putchar('\n');
+}
+
+
+/**
+  *lenstr - Function to count the length of a string
+  *
+  *@i: The parameter to be counted
+  *
+  *Return: 0
+  */
+
+int lenstr(char *i)
+{
+	int count = 0;
+	int x;
+
+	for (x = 0; i[x] != '\0'; x++)
+	{
+		count = count + 1;
+	}
+	return (count);
 }
