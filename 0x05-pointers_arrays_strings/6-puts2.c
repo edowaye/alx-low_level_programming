@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 /**
-  *_strelen - Prototype function
+  *_strlen - Prototype function
   *@s: string whose length is to be returned
   *
   *Return: Count of char as an int
@@ -9,32 +9,31 @@
 
 int _strlen(char *s)
 {
-	int count = 0;
+	int len = 0;
+	int i = 0;
 
-	while (*s != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		count++;
-		s++;
+		len++;
 	}
-	return (count);
+	return (len);
 }
 
 
 /**
   *puts2 - Function prototype
   *
-  *@s: string to be printed
+  *@str: string to be printed
   *
-  *Return: 0
+  *Return: void
   */
 
-void puts2(char *s)
+void puts2(char *str)
 {
-	int i = 0;
+	int i;
 
-	while (s[i] != '\n' && s[i] != '\0')
-	{
-		_putchar(s[i]);
-		i++;
-	}
+	for (i = 0; i < _strlen(str); i = i + 2)
+		_putchar(str[i]);
+
+	_putchar('\n');
 }
