@@ -1,38 +1,35 @@
 #include "main.h"
-#include <stdio.h>
 #include <string.h>
 
 /**
-  *rev_string: Function prototype
+  *rev_string - Prototype function that reverses
+  *a string
   *
-  *@s: String to be reversed
+  *@s: string to be reversed
   *
-  *Description: A function that reverses a string
-  *
-  *Return 0
+  *Return: 0
   */
-
 void rev_string(char *s)
 {
-	int i = str.length() - 1;
-	int start, end = i + 1; 
-	string result = "";
+	int len = strlen(s);
 
-	while (i >= 0) 
+	int i = 0;
+	int j = 0;
+	char temp[100];/*a temporary array to store*/
+
+	for (i = 0; i < len; i++)
 	{
-		if (str[i] == ' ') 
+		for (j = 0; i < len; j++, i++)/*using j to count len*/
 		{
-			start = i + 1;
-			while (start != end)
-				result += str[start++];
-			result += ' ';
-			end = i;
+			if (s[i] == ' ' || s[i] == '.')
+				break;
+			temp[j] = s[i];/*storing str into temp*/
 		}
-
-		i--;
+		while (j > 0)
+		{
+			j--;
+			s[i - j - i] = temp[j];
+		}
+		_putchar("%s\n", s);
 	}
-	start = 0;
-	while (start != end)
-		result += str[start++];
-	return (0);
 }
