@@ -7,20 +7,20 @@
   *Description: A function that prints n elements of an
   *array of integers, followed by a new line
   *@n: elenents of array
-  *Return: 0
+  *Return: void
   */
 
 void print_array(int *a, int n)
 {
-	int array[] = n;
+	int array[] = {n};
 
-	for (int length = sizeof(arr) / sizeof(arr[0]);
-			printf("Elements of given array: \n");
+	int loop;
 
-			for (int i = 0; i < length; i++)
-			{
-			printf("%d ", arr[i]);
-			}
+	for (loop = 0; loop < n; loop++)
+		printf("%i", array[loop]);
+	
+	printf(" ");
+	printf(",");
 
-			return (0);
+	return (0);
 }
