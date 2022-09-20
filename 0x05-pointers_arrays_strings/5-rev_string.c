@@ -25,5 +25,8 @@ void rev_string(char *s)
 				break;
 			temp[j] = s[i];/*storing str into temp*/
 		}
+		while (j > 0)
+			j--;
+		s[i - j - 1] = temp[j];
 	}
 }
