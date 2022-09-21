@@ -5,13 +5,13 @@
  * *_strcpy - Prototype function
  *@src: source
  *dest: destination
- *@n: The first n character copied from src to dest
- *Return: dest
+ *Return: string in dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
 	int i;
+	int n;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 
