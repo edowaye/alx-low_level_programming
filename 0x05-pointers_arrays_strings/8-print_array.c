@@ -6,21 +6,23 @@
   *
   *Description: A function that prints n elements of an
   *array of integers, followed by a new line
-  *@n: elenents of array
+  *@a: a parameter
+  *@n: one of our parameters
   *Return: void
   */
 
 void print_array(int *a, int n)
 {
-	int array[] = {n};
+	int i;
 
-	int loop;
+	for (i = 0; i <= n - 1; i++)
+	{
+		printf("%d", *(a + i));
 
-	for (loop = 0; loop < n; loop++)
-		printf("%i", array[loop]);
-	
-	printf(" ");
-	printf(",");
-
-	return (0);
+		if (i != (n - 1))
+				printf(",");
+				else /*if (i = (n - 1)*/
+				break;
+	}
+	printf("\n");
 }
