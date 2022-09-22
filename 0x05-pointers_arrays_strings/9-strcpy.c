@@ -3,23 +3,41 @@
 
 /**
  * *_strcpy - Prototype function
- *@src: source
- *dest: destination
+ *@src: parameter
+ *dest: parameter
  *Return: string in dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int i;
-	int n;
+	int i, j;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	i = _strlen(src);
 
-		dest[i] = src[i];
-
-	for ( ; i < n; i++)
-
-		dest[i] = '\0';
+	for (j = 0; j <= i; j++)
+	{
+		*(dest + j) = src[j];
+	}
 
 	return (dest);
+}
+
+/**
+  *_strlen - Prototype function
+  *@s: String whose length should be returned
+  *
+  *Return: Count of char as an integer
+  */
+
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
+
+	return (count);
 }
