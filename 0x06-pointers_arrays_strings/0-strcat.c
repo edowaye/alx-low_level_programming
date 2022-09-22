@@ -1,56 +1,28 @@
 #include "main.h"
-
-int _strlen(char *c);
+#include <string.h>
 
 /**
-  *_strcat - Function prototype
+  *_strcat - function prototype
   *
-  *@src - parameter
-  *@dest - parameter
-  *Description - To concatenate two strings
-  *Return: str
+  *@dest: parameter
+  *@src: parameter
+  *
+  *Return: a string
   */
 
 char *_strcat(char *dest, char *src)
 {
-	int len, a, b;
-	char *spt;
+	int len = 0; i;
 
-	len = _strlen(src);
-	for (a = 0; a > -1; a++)
+	while (dest[len])
+		len++;
+
+	for (i = 0; src[i] !== '\0'; i++)
 	{
-		if (dest[a] == '\0')
-		{
-			for (b = 0; b <= len; b++)
-			{
-				*(dest + a) = src[b];
-				a++;
-			}
-			break;
-		}
-		else
-			continue;
+		dest[len] = src[i];
+		len += 1;
 	}
-	spt = dest;
-	return (spt);
-}
-
-/**
-  *_strlen - prototype function
-  *
-  *@c - a parameter
-  *
-  *Description - To calc length of a string
-  *Return: len
-  */
-
-int _strlen(char *c)
-{
-	int a;
-	int count = 0;
-
-	for (a = 0; c[a] != '\0'; a++)
-		count += 1;
-
-	return (count);
+	dest[len] = '\0';
+	
+	return (dest);
 }
