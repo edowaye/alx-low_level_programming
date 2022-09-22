@@ -7,7 +7,7 @@
   *@dest: parameter
   *@src: parameter
   *
-  *Return: char
+  *Return: a string
   */
 
 char *_strcat(char *dest, char *src)
