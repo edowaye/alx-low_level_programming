@@ -1,13 +1,13 @@
 #include "main.h"
 
 int _strlen(char *c);
-#include <string.h>
 
 /**
   *_strcat - Function prototype
   *
   *@src - parameter
   *@dest - parameter
+  *Description - To concatenate two strings
   *Return: str
   */
 
@@ -40,6 +40,7 @@ char *_strcat(char *dest, char *src)
   *
   *@c - a parameter
   *
+  *Description - To calc length of a string
   *Return: len
   */
 
