@@ -15,7 +15,7 @@ void rev_string(char *s)
 
 	int i = 0;
 	int j = 0;
-	char temp[100];/*a temporary array to store*/
+	char temp;
 
 	for (i = 0; i < len; i++)
 	{
