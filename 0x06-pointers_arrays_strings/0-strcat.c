@@ -1,36 +1,53 @@
 #include "main.h"
-int _strlen(char *s)
+int _strlen(char *c);
 
 /**
-  * *_strcat - Function prototype
+  *_strcat - Function prototype
   *
-  *@dest: destination str
-  *@src: source str
-  *
-  *Return:str
+  *@src - parameter 1
+  *@dest - parameter 2
+  *Return: a string
   */
-
-int _strlen(char *s)
-{
-	int i;
-	int count = 0;
-
-	for (i = 0; s[i] != '\0'; x++)
-		count +=1;
-
-	return (count);
- }
-
 
 char *_strcat(char *dest, char *src)
 {
+	int len, a, b;
+	char *spt;
 
-	char dest[] = x;
-	char src[] = y;
-
-	_strcat(dest, src);
-
-	_putchar("%s\n", dest);
-
-	return (0);
+	len = _strlen(src);
+	for(a = 0; a > -1; a++)
+	{
+		if (dest[a] == '\0')
+		{
+			for (b = 0; b < len; b++)
+			{
+				*(dest + a) = src[b];
+				a++;
+			}
+			break;
+		}
+		else
+			continue;
 	}
+	spt = dest;
+	return (spt);
+}
+
+/**
+  *_strlen prototype function
+  *
+  *@c - a parameter
+  *
+  *Return: length of src string
+  */
+
+int _strlen(char *c)
+{
+	int a;
+	int count = 0;
+
+	for (a = 0; c[a] != '\0'; a++)
+		count+=1;
+
+	return (count);
+}
