@@ -4,7 +4,7 @@
 /**
  * *_strcpy - Prototype function
  *@src: parameter
- *dest: parameter
+ *@dest: parameter
  *Return: string in dest
  */
 
