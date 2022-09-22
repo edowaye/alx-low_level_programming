@@ -1,12 +1,14 @@
 #include "main.h"
+
 int _strlen(char *c);
+#include <string.h>
 
 /**
   *_strcat - Function prototype
   *
-  *@src - parameter 1
-  *@dest - parameter 2
-  *Return: a string
+  *@src - parameter
+  *@dest - parameter
+  *Return: str
   */
 
 char *_strcat(char *dest, char *src)
@@ -15,11 +17,11 @@ char *_strcat(char *dest, char *src)
 	char *spt;
 
 	len = _strlen(src);
-	for(a = 0; a > -1; a++)
+	for (a = 0; a > -1; a++)
 	{
 		if (dest[a] == '\0')
 		{
-			for (b = 0; b < len; b++)
+			for (b = 0; b <= len; b++)
 			{
 				*(dest + a) = src[b];
 				a++;
@@ -34,11 +36,11 @@ char *_strcat(char *dest, char *src)
 }
 
 /**
-  *_strlen prototype function
+  *_strlen - prototype function
   *
   *@c - a parameter
   *
-  *Return: length of src string
+  *Return: len
   */
 
 int _strlen(char *c)
@@ -47,7 +49,7 @@ int _strlen(char *c)
 	int count = 0;
 
 	for (a = 0; c[a] != '\0'; a++)
-		count+=1;
+		count += 1;
 
 	return (count);
 }
