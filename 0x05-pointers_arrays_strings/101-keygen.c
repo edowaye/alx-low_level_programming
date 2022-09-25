@@ -21,7 +21,7 @@ int main(void)
 	{
 		a = (rand() % 125) + 1;
 		printf("%c", a);
-		c = a;
+		c -= a;
 	}
 	printf("%c", c);
 	printf("\n");
