@@ -4,67 +4,27 @@
 #include <time.h>
 
 /**
-  *Function to randomly generates password
-  *of length N
+  *main - Entry point
+  *Descrition - Function to randomly generates password
+  *Return: 0
   */
-
-void randomPasswordGeneration(int N)
-{
-	int i = 0;
-	int randomizer = 0;
-
-	srand((unsigned int)(time(NULL)));
-
-	/*Array of numbers*/
-	char numbers[] = "0123456789";
-
-	char letter[] = "abcdefghijklmnoqprstuvwyzx";
-
-	/*Array of capital alphabets*/
-	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
-
-	/*Array of all the special symbols*/
-	char symbols[] = "!@#$^&*?";
-
-	char password[N];
-
-	/*inside the loop*/
-	randomizer = rand() % 4;
-
-	for (i = 0; i < N; i++)
-	{
-		if (randomizer == 1)
-		{
-			password[i] = numbers[rand() % 10];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomizer == 2)
-		{
-			password[i] = symbols[rand() % 8];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else if (randomizer == 3)
-		{
-			password[i] = LETTER[rand() % 26];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-		else
-		{
-			password[i] = letter[rand() % 26];
-			randomizer = rand() % 4;
-			printf("%c", password[i]);
-		}
-	}
-}
 
 int main(void)
 {
-	int N = 10;
+	int a;
+	int b;
+	int c;
 
-	randomPasswordGeneration(N);
+	srand(time(NULL));
+
+	for (b = 0, c = 2772; c > 122; b++)
+	{
+		a = (rand() % 125) + 1;
+		printf("%c", a);
+		c = a;
+	}
+	printf("%c", c);
+	printf("\n");
 
 	return (0);
 }
