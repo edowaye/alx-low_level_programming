@@ -3,7 +3,7 @@
 /**
   *_atoi - Function prototype
   *@s: a paramete9r
-  *return: an integer
+  *Return: an integer
   */
 
 int _atoi(char *s)
