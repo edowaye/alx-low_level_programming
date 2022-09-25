@@ -26,10 +26,10 @@ int _atoi(char *s)
 		else if (ch)
 			break;
 		s++;
+	}
 
 	if (i < 0)
 		u = (-u);
 
 	return (u);
-	}
 }
