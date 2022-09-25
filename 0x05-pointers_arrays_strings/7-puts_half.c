@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
   *puts_half - Prototype function
@@ -20,7 +19,7 @@ void puts_half(char *str)
 
 
 /**
-  *_str-len: Prototype function
+  *_strlen - Prototype function
   *
   *@s:string
   *
@@ -32,6 +31,6 @@ int _strlen(char *s)
 	int len = 0;
 
 	while (*(s + len) != '\0')
-			len++;
+		len++;
 	return (len);
 }
