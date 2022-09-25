@@ -7,7 +7,7 @@
   *@src: parameter
   *@dest: parameter
   *@n: parameter
-  *Return: spring
+  *Return: string
   */
 
 char *_strncat(char *dest, char *src, int n)

@@ -4,24 +4,32 @@
 /**
   *_strcat - function prototype
   *
-  *@dest: parameter
   *@src: parameter
-  *
-  *Return: a string
+  *@dest: parameter
+  *Return: dest
   */
 
 char *_strcat(char *dest, char *src)
 {
-	int len = 0, i;
+	char *s;
+	int len, x, y;
 
-	while (dest[len])
-		len++;
+	len = strlen(src);
 
-	for (i = 0; src[i] != '0'; i++)
+	for (x = 0; x > -1; x++)
 	{
-		dest[len] = src[i];
-		len += 1;
+		if (dest[x] == '\0')
+		{
+			for (y = 0; y <= len; y++)
+			{
+				*(dest + x) = src[y];
+				x++;
+			}
+			break;
+		}
+		else
+			continue;
 	}
-	dest[len] = '\0';
-	return (dest);
+	s = dest;
+	return (s);
 }

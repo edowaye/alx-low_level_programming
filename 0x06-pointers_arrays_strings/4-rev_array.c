@@ -4,8 +4,8 @@
 /**
  *reverse_array - Function to reverse
  *an array
- *@a: array
- *@n: integer from array
+ *@a:array
+ *@n:integer from array
  */
 
 void reverse_array(int *a, int n)
