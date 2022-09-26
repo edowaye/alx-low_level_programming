@@ -1,1 +1,1 @@
-My readme file for the subdirectory
+Working on more arrays, pointers and strings under lowlevel programming
