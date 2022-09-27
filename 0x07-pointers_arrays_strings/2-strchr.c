@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 
 /**
   *_strchr - Function prototype that locates
@@ -12,12 +13,15 @@
 
 char *_strchr(char *s, char c)
 {
-
-	int i = 1;
-
-	for (i = 0; *(s + i); i++)
+	while (*s)
 	{
-		if (*(s + i) == c)
-			return ('\0');
+		if (c == *s)
+		{
+			return (s);
+		}
+		s++;
 	}
+	if (!c)
+		return (s);
+	return(NULL);
 }
