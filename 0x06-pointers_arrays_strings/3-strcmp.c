@@ -3,16 +3,28 @@
 
 /**
   * _strcmp - Function prototype
-  * @s1 - parameter
-  * @s2 - parameter
-  * Return - an integer
+  * @s1: parameter
+  * @s2: parameter
+  * Return: a character
   */
 
 int _strcmp(char *s1, char *s2)
 {
-	int result;
+	int a, res;
 
-	result = strcmp(s1, s2);
+	for (a = 0; s1[a] != '\0'; a++)
+	{
+		res = s1[a] - s2[a];
+		if (res == 0)
+			continue;
+		else if (s1[a] == '\0' && s2[a] == ' ')
+		{
+			res = s1[a] - ' ';
+			break;
+		}
+		else
+			break;
+	}
 
-	return (result);
+	return (res);
 }
