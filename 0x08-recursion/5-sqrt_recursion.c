@@ -13,9 +13,9 @@ int _sqrt_recursion(int n)
 {
 	int x;
 
-	if (n != x ^ 2)
+	if (n != (x ^ 2))
 		return (-1);
-	if (n == x ^ 2)
+	if (n == (x ^ 2))
 		return (0);
 	else
 		return (_sqrt_recursion(n ^ 2));
