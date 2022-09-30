@@ -11,12 +11,10 @@
 
 int _sqrt_recursion(int n)
 {
-	int x = 1;
+	float x = 1;
 
-	if (n != (x ^ 2))
-		return (-1);
-	if (n == (x ^ 2))
-		return (0);
+	if (n == (x ** (1 / 2)))
+		return (_sqrt_recursion(n ** 2));
 	else
-		return (_sqrt_recursion(n ^ 2));
+		return (-1);
 }
