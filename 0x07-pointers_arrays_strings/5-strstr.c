@@ -1,5 +1,4 @@
 #include "main.h"
-int _strlen(char *c);
 
 /**
   *_strstr - Function prototype
@@ -11,47 +10,22 @@ int _strlen(char *c);
 
 char *_strstr(char *haystack, char *needle)
 {
-	int x = 0;
-	int len, y, z;
+	char *a, *ab;
 
-	len = _strlen(needle);
-
-	if (*needle == 0)
-		return (haystack);
-
-	while (haystack[x + len] != '\0')
+	while (*haystack != '\0')
 	{
-		z = 0;
-		for (y = 0; y <= len; y++)
+		a = haystack;
+		ab = needle;
+
+		while (*haystack != '\0' && *ab != '\0' && *haystack == *ab)
 		{
-			if (haystack[x + y] == needle[y])
-			{
-				z++;
-				if (z == len)
-					return (haystack + x);
-				continue;
-			}
-			else
-				break;
+			haystack++;
+			ab++;
 		}
-		x++;
+		if (*ab == '\0')
+			return (ab);
+
+		haystack = ab + 1;
 	}
-	return ('\0');
-}
-
-/**
-  *_strlen - function prototype for getting length
-  *@c: parameter
-  *Return: length of the string
-  */
-
-int _strlen(char *c)
-{
-	int i, count = 0;
-
-	for (i = 0; c[i] != '\0'; i++)
-	{
-		count += 1;
-	}
-	return (count - 1);
+	return (0);
 }
