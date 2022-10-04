@@ -18,6 +18,9 @@ char *argstostr(int ac, char **av)
 	int a, b, c, size;
 	char *arg;
 
+	size = 0;
+	c = 0;
+
 	if (ac == 0 || av == NULL)/*condition 1*/
 		return (NULL);
 
@@ -52,10 +55,7 @@ char *argstostr(int ac, char **av)
 			b++;
 			c++;
 		}
-		arg[c] = '\n';
-		c++;
-		a++;
+		arg[c] = '\0';
+		return (arg);
 	}
-	arg[c] = '\0';
-	return (arg);
 }
