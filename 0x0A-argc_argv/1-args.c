@@ -2,7 +2,7 @@
 
 /**
   *main - Entry point of program that prints
-  *the cumber of argumnents passed to it
+  *the number of arguments passed to it
   *
   *@args: argument count
   *@argv: argument vector
@@ -13,7 +13,7 @@
 
 int main(int args, char *argv[])
 {
-	printf("%i\n" args -1);
-	void(argv);
+	printf("%d\n", args - 1);
+	(void)argv;
 	return (0);
 }
