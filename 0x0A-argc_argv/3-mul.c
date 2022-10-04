@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -14,17 +13,20 @@
 
 int main(int argc, char *argv[])
 {
-	int x, y, product;
+	int x, product;
 
-	if (argc < 2)
+	product = 1;
+
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
-	product = x * y;
-
 	for (x = 1; x < argc; x++)
-		printf("%i\n", product);
-	return (0);
+	{
+		product = product * atoi(argv[x]);
+	}
+	printf("%d\n", product);
+		return (0);
 }
