@@ -6,14 +6,12 @@
   *
   *@b: a parameter
   *
-  *Return: a pointer to alllocated mem
+  *Return: a pointer to allocated mem
   */
 
 void *malloc_checked(unsigned int b)
 {
-	unsigned int *ptr;
-
-	ptr = malloc(b);
+	void *ptr = malloc(b);
 
 	if (ptr == NULL)
 		exit(98);
