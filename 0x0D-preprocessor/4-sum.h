@@ -1,13 +1,6 @@
-#ifndef SUM
-#define SUM
-#define SUM(x, y) ((x) + (y))
+#ifndef SUM_H
+#define SUM_H
 
-/**
-  *main - entry point
-  *
-  *Description - Inclusion of a function-like micro
-  *that sums up x and y
-  *
-  */
+#define SUM(x, y)((x) + (y))
 
-#endif /*SUM*/
+#endif
