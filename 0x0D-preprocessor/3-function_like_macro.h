@@ -1,6 +1,5 @@
 #ifndef ABS
-#define ABS ()
-#define (-) (+)
+#define ABS (-x) (+x)
 
 /**
   *main: header file for absolute value
