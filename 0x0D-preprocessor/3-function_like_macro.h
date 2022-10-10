@@ -1,5 +1,6 @@
-#ifndef ABS
-#define ABS((-(x)) (x))
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
+#define ABS(x) ((x) < o ? (-x) : (x))
 
 /**
   *main - header file for absolute value
@@ -8,4 +9,4 @@
   *
   */
 
-#endif /*ABS(x)*/
+#endif
