@@ -19,13 +19,20 @@ struct dog
 };
 
 /**
-  *dog_new- typedef or struct dog
+  *pup - typedef for struct dog
   *
   */
 
-typedef struct dog
+typedef struct dog pup
 {
 	char *name;
 	float age;
 	char *owner;
-} dog_new;
+};
+
+void print_dog(struct dog *p);
+void old_dog(struct dog *p, char *name, float age, char *owner);
+pup *new_dog(char *name, float age, char *owner);
+void black_dog(pup *p);
+
+#endif /*DOG_H*/
