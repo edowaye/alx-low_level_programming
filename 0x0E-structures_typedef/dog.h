@@ -19,20 +19,20 @@ struct dog
 };
 
 /**
-  *pup - typedef for struct dog
+  *dog_t - typedef for struct dog
   *
   */
 
-typedef struct dog pup
+typedef struct dog_t
 {
 	char *name;
 	float age;
 	char *owner;
 };
 
-void print_dog(struct dog *p);
-void old_dog(struct dog *p, char *name, float age, char *owner);
-pup *new_dog(char *name, float age, char *owner);
-void black_dog(pup *p);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
 #endif /*DOG_H*/
