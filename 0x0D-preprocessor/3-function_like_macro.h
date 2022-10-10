@@ -1,14 +1,14 @@
-#ifndef FUNCTION_LIKE_MACRO_H
-#define FUNCTION_LIKE_MACRO_H
+#ifndef ABS_H
+#define ABS_H
 
-#define ABS(x) (x)
+#define ABS(X) (((X) < (0)) ? (-(X)) : (X))
 
 /**
-  *main: header file for function
+  *main - header file for function
   *
   *Description - Inclusion of a function-like
   *macro that computes absolute value
   *
   */
 
-#endif /*FUNCTION_LIKE_MACRO_H*/
+#endif /*ABS(X)*/
