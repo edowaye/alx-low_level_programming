@@ -1,5 +1,4 @@
 #ifndef SIZE
-#define SIZE
 #define SIZE 1024
 /**
   *main - header file for object-
