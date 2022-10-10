@@ -8,9 +8,9 @@
   *@d: pointer to struct dog
   *@name: member 1
   *@age: member 2
-  *@owner: member 3 which is a pointer
+  *@owner: member 3
   *
-  *Return: Nothing
+  *Return: void
   *
   */
 
