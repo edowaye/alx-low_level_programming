@@ -3,10 +3,10 @@
 #define SUM(x, y) ((x) + (y))
 
 /**
-  *main - Entry point
+  *main - entry point
   *
-  *Description - Inclusion on function-like micro
-  *that computes the sum of the numbers x and y
+  *Description - Inclusion of a function-like micro
+  *that sums up x and y
   *
   */
 
