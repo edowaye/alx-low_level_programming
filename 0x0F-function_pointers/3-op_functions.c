@@ -16,7 +16,7 @@ int op_add(int a, int b)
 }
 
 /**
-  *op_sub: function prototype that returns
+  *op_sub - Function prototype that returns
   *difference of integers
   *
   *@a: integer 1
@@ -37,7 +37,7 @@ int op_sub(int a, int b)
   *@a: integer 1
   *@b: integer 2
   *
-  *Result: integer produce
+  *Return: integer produce
   */
 
 int op_mul(int a, int b)
@@ -47,12 +47,12 @@ int op_mul(int a, int b)
 
 /**
   *op_div - function prototype that returns
-  quotient of integers
+  *quotient of integers
   *
   *@a: integer 1
   *@b: integer 2
   *
-  *Result: integer quotient
+  *Return: integer quotient
   */
 
 int op_div(int a, int b)
@@ -72,7 +72,7 @@ int op_div(int a, int b)
   *@a: integer 1
   *@b: integer 2
   *
-  *Result: integer remainder
+  *Return: integer remainder
   */
 
 int op_mod(int a, int b)

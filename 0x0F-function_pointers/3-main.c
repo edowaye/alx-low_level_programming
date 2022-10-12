@@ -37,6 +37,6 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 
 	printf("%d\n", z);
-	z= (get_op_func(argv[2]))(a, b);
+	z = (get_op_func(argv[2]))(a, b);
 	return (0);
 }
