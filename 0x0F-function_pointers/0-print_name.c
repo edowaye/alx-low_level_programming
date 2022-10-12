@@ -1,4 +1,5 @@
 #include "function_pointers_h"
+#include <stdlib.h>
 
 /**
   *print_name - prototype function that prints
