@@ -16,16 +16,16 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int ui;
 	char *s;
-	va_list string;
+	va_list strings;
 
 	if (separator == NULL)
 		separator = "";
 
-	va_start(string, n);
+	va_start(strings, n);
 
 	for (ui = 0; ui < n; ui++)
 	{
-		s = va_arg(string, char *);
+		s = va_arg(strings, char *);
 
 		if (s == NULL)
 			s = "(nil)";
@@ -36,6 +36,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", separator);
 		}
 		printf("\n");
-		va_end(string);
+		va_end(strings);
 	}
 }
