@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
@@ -8,22 +10,25 @@
   *@separator: pointer parameter
   *@n: parameter
   *
-  *Return: a character
+  *Return: Nothing (void)
   *
   */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list args; /*create a var list variable*/
+	unsigned int ui;
 
-	va_start(args, n);
+	va_list xyz; /*create a var list variable*/
 
-	for (int ui = 0; ui < n; ui++)
+	va_start(xyz, n);
+
+	for (ui = 0; ui < n; ui++)
 	{
-		int x = va_arg(args, int);
-
-		_putchar("%c\n", ui);
+		printf("%d", va_arg(xyz, int));
+		if (ui < n - 1 && separator != NULL)
+			printf("%s", separator);
 	}
-	va_end(args);
-	return (0);
+	printf("\n");
+
+	va_end(xyz);
 }
