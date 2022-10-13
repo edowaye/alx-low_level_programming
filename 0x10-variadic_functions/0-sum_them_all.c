@@ -14,18 +14,18 @@
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int sum = 0, ui;
-	va_list arglist;
+	va_list args;
 
 	if (n == 0)
 		return (0);
 
-	va_start(arglist, n);
+	va_start(args, n);
 
 	for (ui = 0; ui < n; ui++)
 	{
-		sum += va_arg(arglist, int);
+		sum += va_arg(args, int);
 	}
-	va_end(arglist);
+	va_end(args);
 
-	return (0);
+	return (sum);
 }
