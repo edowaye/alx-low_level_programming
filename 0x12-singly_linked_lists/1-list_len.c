@@ -5,19 +5,19 @@
   *
   *@h: singly linked list
   *
-  *Return: string length
+  *Return: string elements
   */
 
 size_t list_len(const list_t *h)
 {
-	size_t elementsnum;
+	size_t elements_num;
 
-	elementsnum = 0;
+	elements_num = 0;
 
-	while (h == NULL)
+	while (h != NULL)
 	{
 		h = h->next;
-		elementsnum++;
+		elements_num++;
 	}
-	return (elementsnum);
+	return (elements_num);
 }
