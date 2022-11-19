@@ -1,16 +1,16 @@
 #include "dog.h"
 #include <stdlib.h>
 
+int _strlen(char *str);
+char *_strcopy(char *dest, char *src);
+dog_t *new_dog(char *name, float age, char *owner);
+
 /**
-  *new_dog - function prototype for created a new dog
-  *
-  *@name: element 1
-  *@age: element 2
-  *@owner: element 3
-  *
-  *Return: Null if function fails
-  *
-  */
+ * _strlen - Finds the length of a string.
+ * @str: The string to be measured.
+ *
+ * Return: The length of the string.
+ */
 
 int _strlen(char *str)
 {
